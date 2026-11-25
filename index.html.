@@ -15,7 +15,9 @@
 label{display:block;color:var(--muted);font-size:12px;margin:12px 0 5px}select,button{font:inherit;border-radius:9px;border:1px solid #ffffff25;padding:10px 11px;background:#263847;color:var(--text)}select{width:100%}button{cursor:pointer;font-weight:700}button:hover{filter:brightness(1.12)}.primary{background:var(--gold);color:#1a2329;border:0}.actions{display:grid;grid-template-columns:1fr 1fr;gap:8px;margin-top:12px}.actions button:first-child{grid-column:1/-1}.moves{border-top:1px solid #ffffff1b;margin-top:15px;padding-top:11px}.moves h3{font-size:14px;margin:0 0 7px}.move-list{max-height:180px;overflow:auto;color:var(--muted);font-size:13px;line-height:1.9}.legend{font-size:12px;color:var(--muted);line-height:1.8;margin-top:12px}.legend b{color:var(--gold)}.notice{font-size:11px;color:#91a5b4;margin-top:10px}.clock-low{color:#ff7777}
 @media(max-width:700px){body{padding:12px}.layout{grid-template-columns:1fr}.panel{order:2}.board{border-width:5px}.panel{padding:14px}}
 </style></head>
-<body><main class="app">
+<body style="background:#171020;color:white">
+<h1 style="color:#bb86fc">STAGNAR CHESS — ТЕСТ</h1>
+<main class="app">
 <header><div><div class="brand">♟ CHESS ARENA</div><h1>Шахматы против ботов</h1></div><div class="rating"><span id="rating">800</span> ELO<small>Твой рейтинг</small></div></header>
 <div class="layout"><div id="board" class="board"></div><aside class="panel">
 <div id="status" class="status">Твой ход</div><div id="detail" class="sub">Выбери фигуру, затем клетку для хода.</div>
