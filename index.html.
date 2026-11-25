@@ -32,6 +32,12 @@ label{display:block;color:var(--muted);font-size:12px;margin:12px 0 5px}select,b
 <div class="notice">Оценки ходов и сила ботов приблизительные, это учебный игровой движок, а не официальный рейтинг FIDE.</div>
 </aside></div></main>
 <script>
+window.onerror = function(message, source, line) {
+  document.body.innerHTML =
+    '<div style="background:#171020;color:white;padding:25px;font:18px Arial">' +
+    '<h2>ОШИБКА STAGNAR CHESS</h2>' +
+    '<p>' + message + '</p><p>Строка: ' + line + '</p></div>';
+};
 (()=> {
  const game=new Chess(),board=document.getElementById('board'),$=id=>document.getElementById(id);
  const glyph={wk:'♔',wq:'♕',wr:'♖',wb:'♗',wn:'♘',wp:'♙',bk:'♚',bq:'♛',br:'♜',bb:'♝',bn:'♞',bp:'♟'};
